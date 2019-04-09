@@ -71,8 +71,6 @@ func setDifference(a, b []Element) []Element {
 		visited[elem] = struct{}{}
 	}
 
-	var expected []Element
-
 	for _, elem := range b {
 		_, seen := visited[elem]
 
@@ -84,8 +82,11 @@ func setDifference(a, b []Element) []Element {
 		visited[elem] = struct{}{}
 	}
 
+	expected := make([]Element, len(visited))
+	i := 0
 	for elem := range visited {
-		expected = append(expected, elem)
+		expected[i] = elem
+		i++
 	}
 
 	return expected
