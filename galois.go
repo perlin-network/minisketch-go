@@ -3,9 +3,6 @@ package minisketch
 // GF(2^64)
 
 const (
-	// The number of times to add an element together to yield a sum of zero.
-	Characteristic = 2
-
 	// The number of dimensions of each element in the finite field.
 	Dimension = 64
 
