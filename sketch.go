@@ -11,8 +11,8 @@ package minisketch
 // under a finite field, such as GF(2^64), such as taking advantage of the
 // Frobenius endomorphism to only require sending every odd term coefficient
 // of the formal power series before sending our sketch to a third party, as
-// our external third-party can expand every odd term coefficient into into
-// its even term coefficient counterpart through the "freshman's dream".
+// our external third-party can expand every odd term coefficient into its
+// even term coefficient counterpart through the "freshman's dream".
 type Sketch []Element
 
 // Add immutably adds elements to the sketch. If an element is added
